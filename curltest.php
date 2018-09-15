@@ -5,7 +5,7 @@
 	{
 		$text = $_POST["text"];
 		$apikey = $_POST["apikey"];
-		$url = 'www.geoindosoa.xyz/api/search/'.$text;
+		$url = 'localhost/soa_master/api/search/'.$text;
 		$curl = curl_init();
 		curl_setopt($curl,CURLOPT_URL,$url);
 		curl_setopt($curl,CURLOPT_RETURNTRANSFER,1);
@@ -85,7 +85,7 @@
 	{
 		$id = $_POST["id"];
 		$apikey = $_POST["apikey"];
-		$url = 'www.geoindosoa.xyz/api/kabupatenkuById/'.$id;
+		$url = 'localhost/soa_master/api/kabupatenkuById/'.$id;
 		$curl = curl_init();
 		curl_setopt($curl,CURLOPT_URL,$url);
 		curl_setopt($curl,CURLOPT_RETURNTRANSFER,1);
@@ -133,7 +133,7 @@
 	{
 		$id = $_POST["id"];
 		$apikey = $_POST["apikey"];
-		$url = 'www.geoindosoa.xyz/api/kelurahankuById/'.$id;
+		$url = 'localhost/soa_master/api/kelurahankuById/'.$id;
 		$curl = curl_init();
 		curl_setopt($curl,CURLOPT_URL,$url);
 		curl_setopt($curl,CURLOPT_RETURNTRANSFER,1);
